@@ -5,7 +5,10 @@ def open_file(input_file):
 
 def part_one(input_file):
 
-    pass
+    gamma_rate = 0
+    epsilon_rate = 0
+
+    return power_consumption = gamma_rate * epsilon_rate
 
 
 def part_two(input_file):
