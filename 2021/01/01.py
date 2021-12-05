@@ -36,3 +36,21 @@ for i in range(len(depths) - 2):
 
 print(increased2)
 # 1781
+
+
+def open_file(input_file):
+    with open(input_file) as file:
+        lines = file.readlines()
+    return lines
+
+def part_one_zip(input_file):
+
+    depths = open_file(input_file)
+
+    answer = 0
+
+    for i, j in zip(depths, depths[1:]):
+        if j > i:
+            answer += 1
+
+    return answer
